@@ -153,22 +153,22 @@ def main():
     try:
         video_id = extract_video_id(url)
     except ValueError as e:
-        print(f"\n❌  {e}")
+        print(f"\n {e}")
         return
  
     print(f"\n⏳  Fetching up to 100 comments for video ID: {video_id} ...")
     try:
         comments = scrape_comments(video_id, max_comments=100)
     except Exception as e:
-        print(f"\n❌  Failed to fetch comments: {e}")
+        print(f"\n Failed to fetch comments: {e}")
         print("    Check that your YT_API_KEY is correct and the video has comments enabled.")
         return
  
     if not comments:
-        print("\n⚠️  No comments found (video may have comments disabled).")
+        print("\n No comments found (video may have comments disabled).")
         return
  
-    print(f"✅  Fetched {len(comments)} comments. Running sentiment analysis...\n")
+    print(f" Fetched {len(comments)} comments. Running sentiment analysis...\n")
  
     answer, pos, neg, neu = analyse(comments)
     print_results(answer, pos, neg, neu)
