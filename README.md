@@ -1,3 +1,5 @@
+GO to python-app_sentiments.py to try it out
+
 Overview
 
 This project analyzes YouTube comments and classifies them into sentiment categories using Natural Language Processing (NLP) and Machine Learning techniques. The objective was to build an end-to-end text analytics pipeline, compare multiple feature engineering approaches, and identify the best-performing classification model.
