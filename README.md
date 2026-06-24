@@ -71,3 +71,5 @@ Compared sparse vectorization methods against transformer-based embeddings.
 Applied hyperparameter optimization using Optuna.
 Evaluated ensemble learning techniques such as stacking.
 Worked with imbalanced datasets using SMOTE.
+
+Future: deploying it through flask api
