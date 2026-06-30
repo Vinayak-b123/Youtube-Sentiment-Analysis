@@ -74,4 +74,4 @@ Applied hyperparameter optimization using Optuna.
 Evaluated ensemble learning techniques such as stacking.
 Worked with imbalanced datasets using SMOTE.
 
-Future: deploying it through flask api
+Future: deploying it through fast api
